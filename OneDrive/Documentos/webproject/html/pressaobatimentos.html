@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Health Track</title>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Press�o e Batimento!</title>
+	<link rel="stylesheet" href="file:///C:/web%20project/css/estilo.css">
+</head>
+<body>
+    <input type="checkbox" id="chk">
+    <label for="chk" id="riscomenu">
+        <img src="risco_menu.png" alt="">
+    </label>
+    <div class="bg"></div>
+
+    <nav class="menu" id="principal">
+        <ul >
+            <li><a href="Overview.html">RESUMO</a></li>
+            <li><a href="pressaobatimentos.html">PRESS�O / BATIMENTOS</a></li>
+            <li><a href="peso.html">PESO</a></li>
+            <li><a href="exercicios.html">EXERCICIOS</a></li>
+            <li><a href="alimentos.html">ALIMENTOS</a></li>
+            <li><a href="usuario.html">USU�RIO</a></li>
+            <li><a href="health-track001.html">LOGOUT</a></li>
+            
+        </ul>
+    </nav> 
+    
+    <form class="cad_usuario" action="PressaoServlet" method="post">
+			
+            <fieldset id="inf_login" style="padding: 2%;">
+            
+                <legend ><b>Cadastro da Press�o</b></legend>
+                </br>
+                <p>Press�o Sist�lica 
+                    <p><input type="number" name="txtSistolica" size="20" maxlength="3" required></p>
+                </p>
+                <p>Press�o Diast�lica 
+                    <p><input type="number" name="txtDiastolica" size="20" maxlength="3" required></p>
+                </p>
+                <p>Data
+                    <p><input type="date" name="txtData"><br/></p>
+                </p>
+                </br>
+                
+                <input type="submit" value = "CADASTRAR" style="width: 150px; float: left;"/>
+				<input type="reset" value = "LIMPAR" style="width: 150px;  float: right;"/>
+                
+            </fieldset>
+			
+        
+    </form>
+    </br>
+    <form class="cad_usuario" action="CoracaoServlet" method="post">
+			
+            <fieldset id="inf_login" style="padding: 2%;">
+            
+                <legend ><b>Cadastro dos Batimentos</b></legend>
+                </br>
+                <p>Batimentos por Minuto (BPM) 
+                    <p><input type="number" name="txtBatimentos" step="0.01" size="20" maxlength="11" required></p>
+                </p>
+                <p>Data
+                    <p><input type="date" name="txtData"><br/></p>
+                </p>
+                </br>
+                
+                <input type="submit" value = "CADASTRAR" style="width: 150px; float: left;"/>
+				<input type="reset" value = "LIMPAR" style="width: 150px;  float: right;"/>
+                
+            </fieldset>
+			
+        
+    </form>
+
+</body>
+</html>

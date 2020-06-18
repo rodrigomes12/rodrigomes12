@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Health Track</title>
+	<meta charset="ISO-8859-1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dados do Usuário</title>
+	<link rel="stylesheet" href="file:///C:/web%20project/css/estilo.css">
+</head>
+<body>
+    <input type="checkbox" id="chk">
+    <label for="chk" id="riscomenu">
+        <img src="risco_menu.png" alt="">
+    </label>
+    <div class="bg"></div>
+
+    <nav class="menu" id="principal">
+        <ul >
+            <li><a href="Overview.html">RESUMO</a></li>
+            <li><a href="pressaobatimentos.html">PRESS�O / BATIMENTOS</a></li>
+            <li><a href="peso.html">PESO</a></li>
+            <li><a href="exercicios.html">EXERCICIOS</a></li>
+            <li><a href="alimentos.html">ALIMENTOS</a></li>
+            <li><a href="usuario.html">USU�RIO</a></li>
+            <li><a href="health-track001.html">LOGOUT</a></li>
+            
+        </ul>
+    </nav> 
+    
+    <form class="cad_usuario">
+
+        <fieldset id="inf_login" style="padding: 2%; float: left;">
+            <legend ><b>Configurações do usuario</b></legend>
+            <p>Apelido 
+                <p><input type="text" name="txtApelido" size="15" maxlength="30" placeholder="Apelido" required></p>    
+            </p>
+            <p>Nome
+                <p><input type="text" name="txtNome" size="40" maxlength="50" placeholder="Coloque seu primeiro nome" required></p>
+            </p>
+            <p>Sobrenome
+                <p><input type="text" name="txtSobrenome" size="40" maxlength="50" placeholder="Coloque seu sobrenome completo" required></p>
+            </p>
+            <p>CPF
+                <p><input type="number" name="txtCPF" size="20" maxlength="11" placeholder="Coloque seu CPF" required></p>
+            </p>
+            <p>Senha
+                <p><input type="password" name="txtSenha" size="20" maxlength="20" placeholder="Senha" required></p>
+            </p>
+            <p>Confirmar Senha
+                <p><input type="password" name="txtCSenha" size="20" maxlength="20" placeholder="Confirme sua senha" required></p>
+            </p>
+            <p>E-mail 
+                <p><input type="email" name="txtEmail" size="50" maxlength="50" placeholder="E-mail" required></p>
+            </p>
+            <p>Confirmar E-mail
+                <p><input type="email" name="txtCEmail" size="50" maxlength="50" placeholder="Confirme seu e-mail" required></p>
+            </p>
+            
+            </br>
+            <fieldset id="inf_pessoais" style="border-style:dashed; padding: 2%; width: 30%; float:none; ">
+                <legend><b>Informa��es Pessoais</b></legend>
+                <p><label for="cDtNasc">Data de Nascimento</label></br>
+                    <input type="date" name="txtNascimento" size="50" maxlength="50"  required>
+                </p>
+                <p>
+                    <input type="radio" name="txtSexo" value="M" id="cMasc" checked><label for="cMasc">Masculino</label><br/>
+                    <input type="radio" name="txtSexo" value="F" id="cFem"><label for="cFem">Feminino</label><br/>
+                </p>
+                    
+            </fieldset>
+            </br>
+            
+            <input type="submit" value = "ALTERAR" style="width: 150px; float: left;"/>
+            <input type="reset" value = "LIMPAR" style="width: 150px;  float: right;"/>
+            
+        </fieldset>
+        
+    
+</form>
+    
+
+</body>
+</html>
